@@ -1,13 +1,12 @@
+#10) Registering & Login System - Python Interface + SQL Databases
 import mysql.connector
 import os, hashlib
 import getpass
-
 
 DB_HOST = "localhost"
 DB_USER = "root"
 DB_PASS = "root123"
 DB_NAME = "schooldb"
-
 
 def connect_db():
     return mysql.connector.connect(host=DB_HOST, user=DB_USER, password=DB_PASS, database=DB_NAME)
